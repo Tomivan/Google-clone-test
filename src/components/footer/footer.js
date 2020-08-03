@@ -5,16 +5,16 @@ function Footer() {
     return (
         <footer>
             <div>
-               <p>Nigeria</p> 
+               <p className="nigeria">Nigeria</p> 
             </div>
             <div className="footer-1">
-            <div className="Advertising">
+            <div className="advertising">
                 <p>Advertising</p>
                 <p>Business</p>
                 <p>About</p>
                 <p>How Search Works</p>
             </div>
-            <div className="Privacy">
+            <div className="privacy">
                 <p>Privacy</p>
                 <p>Terms</p>
                 <p>Settings</p>

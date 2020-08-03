@@ -1,19 +1,28 @@
 import React from 'react';
-import { BrowserRouter as Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import './section.css';
 
 function Section() {
+    const query = useHistory();
+
+    const searchQuery = () => query.push(`https://cors-anywhere.herokuapp.com/https://google.com/search?q=${query}`);
+    
+    const perfect = () => query.push(`https://perfects.engineering`)
     return (
-        <div>
+        <div className="section">
             <h1><span className="blue">G</span><span className="red">o</span><span className="yellow">o</span>
             <span className="blue">g</span><span className="green">l</span><span className="red">e</span></h1>
-            <input type="text" />
+            <input type="text"  value={query}/><i className="fa fa-microphone"></i>
             <div className="buttons">
-                <button>Google Search</button>
-                <button>I'm feeling lucky</button>
+                <button onClick={searchQuery}>Google Search</button>
+                <button onClick={perfect}>I'm feeling lucky</button>
             </div>
-            <p>Google offered in: <Link to="#">Hausa</Link> <Link to="#">Igbo</Link> 
-            <Link to="#">Èdè Yorùbá</Link><Link to="#">Nigerian Pidgin</Link></p>
+            <div className="section-link">
+            <p>Google offered in:
+                <span className="link">Hausa</span> <span className="link">Igbo</span> 
+                <span className="link">Èdè Yorùbá</span><span className="link">Nigerian Pidgin</span>
+            </p>
+            </div>
         </div>
     )
 }

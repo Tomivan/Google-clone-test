@@ -3,16 +3,14 @@ import './nav.css';
 
 function Nav() {
     return (
-        <div>
             <nav>
                 <ul>
                     <li>Gmail</li>
                     <li>Images</li>
-                    <li></li>
-                    <li>B</li>
+                    <li><i className="fa fa-th"></i></li>
+                    <li className="b">b</li>
                 </ul>
             </nav>
-        </div>
     )
 }
 

@@ -1,0 +1,16 @@
+ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding-right: 1em;
+}
+li{
+   margin-left: 3%;
+}
+.b{
+    background: #775cbc;
+    width: 1%;
+    border-radius: 50%;
+    color: #ffffff;
+    padding: .5em;
+}
